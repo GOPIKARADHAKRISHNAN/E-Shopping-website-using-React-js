@@ -2,7 +2,7 @@ import React from "react"
 
 const Banner = () => {
     return(
-        <div className="container" > 
+        
         <header>
             <div className="headerText">
                 <div>
@@ -12,7 +12,7 @@ const Banner = () => {
             </div>
 
         </header>
-        </div>
+        
     )
 }
 

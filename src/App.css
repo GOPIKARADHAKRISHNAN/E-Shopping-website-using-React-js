@@ -36,6 +36,10 @@ nav {
 
 .left {
   width: 50%;
+  text-align: left;
+  text-decoration: none;
+  color: var(--mainColor);
+  
   
 }
 
@@ -158,4 +162,9 @@ header {
   background: greenyellow;
   padding: 5px 6px;
   color: var(--whiteColor);
+}
+/* not found */
+.not-found {
+  margin-top: 100px;
+
 }

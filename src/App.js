@@ -2,20 +2,27 @@
 import './App.css';
 // eslint-disable-next-line
 import react from 'react';
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import Navbar from "./components/Navbar"
-import Banner from "./components/Banner"
+
 import ProductsContextProvider from "./Global/ProductsContext"
 import Products from "./components/Products"
+import Cart from "./components/Cart"
+import NotFound from "./components/NotFound"
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <Banner />
       <ProductsContextProvider>
-        <div className="container">
-        <Products />
-        </div>
+      <Router>
+      <Navbar />
+       
+        <Switch>
+          <Route path="/" exact component={Products} />
+          <Route path="/cart" exact component={Cart} />
+          <Route component={NotFound} />
+        </Switch>
+      </Router>                     
       </ProductsContextProvider>
     </div>
   );
