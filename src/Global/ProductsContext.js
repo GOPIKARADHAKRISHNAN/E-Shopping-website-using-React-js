@@ -7,6 +7,7 @@ import skirt from "../images/skirt.jpg"
 import shoes from "../images/shoes.jpg"
 import tablet from "../images/tablet.jpg"
 import shirt from "../images/yellowshirt.jpg"
+import watch from "../images/watch.jpg"
 
 export const ProductsContext = createContext();
 
@@ -19,7 +20,8 @@ const ProductsContextProvider = (props) => {
         {id:5, name:'Skirts', price:350, image:skirt, status:'hot'},
         {id:6, name:'Shoes', price:1000, image:shoes, status:'new'},
         {id:7, name:'Tablets', price:30000, image:tablet, status:'hot'},
-        {id:8, name:'Shirts', price:750, image:shirt, status:'hot'}
+        {id:8, name:'Shirts', price:750, image:shirt, status:'hot'},
+        {id:8, name:'Watchs', price:2000, image:watch, status:'new'}
     ]);
     return(
         <ProductsContext.Provider value={{products: [...products]}}>

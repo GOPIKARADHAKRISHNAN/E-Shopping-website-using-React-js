@@ -8,12 +8,14 @@ const Navbar = () => {
         <nav>
             <ul className="left" >
                 <li><Link to="/">Home</Link></li>
+                
 
             </ul>
             <ul className="right">
                 
                 <li><Link to="cart">
                     <span className="shoppingCart"><i class="fas fa-cart-plus"></i> <span className="cartCount">{qty}</span></span>
+                    <input type="text" placeholder="Search.." className="search"></input>
                     
                     </Link>
                                         
